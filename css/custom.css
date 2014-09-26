@@ -134,6 +134,18 @@ a.button:hover {
     background-color: #42AA7D;
 }
 
+.button-fb {
+    background-color: #3b5998;
+    border: 2px solid #3b5998;
+    color: #fff;
+}
+
+.button-fb:hover {
+    border: 2px solid #5173af;
+    color: #fff;
+    background-color: #5173af;
+}
+
 submit.button.button-green {
     padding: 10px 20px;
     border-radius: 5px;
@@ -860,4 +872,21 @@ section#checkout-form #billing-info {
 
 #cards-image {
     width: 250px;
+}
+
+/* Signup */
+
+section#signup-fb .well,
+section#login-fb .well {
+    padding: 80px 20px 100px 20px;
+    border: 1px solid #efefef;
+    margin: 60px;
+    text-align: center;
+}
+
+section#signup-fb .button img,
+section#login-fb .button img {
+    width: 30px;
+    margin-top: -4px;
+    margin-right: 5px;
 }

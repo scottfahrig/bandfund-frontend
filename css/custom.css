@@ -213,7 +213,8 @@ header nav #login {
     float: right;
 }
 
-header nav #login a {
+header nav #login > a,
+header nav #login > ul > li > a {
     color: #fff;
     margin: 0;
     padding: 18px 40px;
@@ -223,7 +224,7 @@ header nav #login a {
    -webkit-transition: background-color .1s ease-in-out;
 }
 
-header nav #login a:hover {
+header nav #login > ul > li > a:hover {
     color: #fff;
     margin: 0;
     padding: 18px 40px;
@@ -232,6 +233,22 @@ header nav #login a:hover {
     transition: background-color .1s ease-in-out;
    -moz-transition: background-color .1s ease-in-out;
    -webkit-transition: background-color .1s ease-in-out;
+}
+
+header nav #login .account-menu {
+    margin-top: 60px;
+}
+
+header nav #login .account-menu ul li a:hover {
+    border-bottom: 0px solid #fff;
+}
+
+li.divider {
+width: 100%;
+height: 1px;
+display: block;
+background-color: #efefef;
+margin-top: 100px;
 }
 
 /* CTA */

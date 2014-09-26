@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/bootstrap-carousel.css">
     <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/dropit.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
@@ -71,7 +72,6 @@
         </svg>
 
         <input type="text" placeholder="Search Artists">
-
       </div>
       <nav>
         <a href="index.html">Home</a>
@@ -79,18 +79,109 @@
         <a href="index.html#discover">Discover</a>
         <a href="about.html">About</a>
         <div id="login">
-          <a href="login.html">Login</a>
+          <ul class="menu">
+            <li>
+                <a href="#">Account</a>
+                <ul class="account-menu">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Payment Settings</a></li>
+                    <li class="divider"></li>
+                    <li><a href="index.html">Log Out</a></li>
+                </ul>
+            </li>
+        </ul>
         </div>
       </nav>
     </header>
 
-    <section id="login-fb">
+    <section id="profile">
+      <div class="container">
+
+        <h1><img src="img/icons/verified-badge.svg" alt="">Carter Hulsey</h1>
+
+        <div class="row">
+          <div class="small-8 columns">
+            <div class="video"></div>
+          </div> <!-- small-8 -->
+          <div class="small-4 columns">
+
+            <div class="stats">
+              <div class="stat">
+                <h5>71</h5>
+                <h6>Fans</h6>
+              </div>
+              <div class="hr"></div>
+              <div class="stat">
+                <h5>114</h5>
+                <h6>Followers</h6>
+              </div>
+              <div class="hr"></div>
+              <div class="stat">
+                <h5>$1,450</h5>
+                <h6>Permo</h6>
+              </div>
+            </div> <!-- stats -->
+
+            <div class="info">
+              <ul>
+                <li><a href="#"><img src="img/icons/genre.svg" alt="">Singer/Songwriter</a></li>
+                <li><a href="#"><img src="img/icons/location.svg" alt="">Joplin, MO</a></li>
+                <li><a href="#"><img src="img/icons/link.svg" alt="">carterhulsey.com</a></li>
+              </ul>
+            </div>
+
+            <div class="actions">
+              <a href="checkout.html" class="button button-green pledge-button">Pledge</a>
+              <a href="#" id="message" class="button button-lightgreen"><span>Send Message</span><img src="img/icons/message.svg" alt=""></a>
+              <a href="#" id="follow" class="button button-lightgreen"><span>Follow</span><img src="img/icons/follow.svg" alt=""></a>
+            </div>
+
+          </div> <!-- small-4 -->
+        </div> <!-- /row -->
+
+        <div class="row" id="profile-content">
+          <div class="small-8 columns">
+            <h2>About Carter Hulsey</h2>
+            <div class="hr-with-margin"></div>
+            <h3>Dolar Sit Amet</h3>
+            <p>Lots of text goes here but I don't have wifi so I can't use the lipsum generator so I'm just going to ramble for a minute. Lots of text goes here but I don't have wifi so I can't use the lipsum generator so I'm just going to ramble for a minute. Lots of text goes here but I don't have wifi so I can't use the lipsum generator so I'm just going to ramble for a minute. </p>
+            <p>I'm in a car with Kevin driving to LA. We just passed OKC and stopped at a gas station. I got candy and a Gatorade. Kevin bought a coke. He just said out loud "Gary Witonga!", whatever that means. Lots of text goes here but I don't have wifi so I can't use the lipsum generator so I'm just going to ramble for a minute. Lots of text goes here but I don't have wifi so I can't use the lipsum generator so I'm just going to ramble for a minute. </p>
+            <p>Lots of text goes here but I don't have wifi so I can't use the lipsum generator so I'm just going to ramble for a minute. Lots of text goes here but I don't have wifi so I can't use the lipsum generator so I'm just going to ramble for a minute. Lots of text goes here but I don't have wifi so I can't use the lipsum generator so I'm just going to ramble for a minute. </p>
+          </div>
+          <div class="small-4 columns">
+            <h2>Rewards</h2>
+            <div class="hr-with-margin"></div>
+            <div class="reward">
+              <h4>$5 Per Month</h4>
+              <h5>17 Supporters</h5>
+              <p>I'm in a car with Kevin driving to LA. We just passed OKC and stopped at a gas station.</p>
+              <a href="checkout.html" class="button button-green">Pledge</a>
+            </div>
+            <div class="reward">
+              <h4>$10 Per Month</h4>
+              <h5>13 Supporters</h5>
+              <p>I'm in a car with Kevin driving to LA. We just passed OKC and stopped at a gas station.</p>
+              <a href="checkout.html" class="button button-green">Pledge</a>
+            </div>
+            <div class="reward">
+              <h4>$25 Per Month</h4>
+              <h5>21 Supporters</h5>
+              <p>I'm in a car with Kevin driving to LA. We just passed OKC and stopped at a gas station.</p>
+              <a href="checkout.html" class="button button-green">Pledge</a>
+            </div>
+          </div> <!-- /rewards -->
+        </div> <!-- /row -->
+
+      </div> <!-- /container -->
+    </section>
+
+    <section id="secondary-cta">
       <div class="row">
-        <div class="small-6 small-offset-3 columns well">
-          <h3>Login with Facebook</h3>
-          <a href="profile-logged-in.html" class="button button-fb"><img src="img/icons/facebook.svg" alt="">Login with Facebook</a>
+          <div class="small-12 columns">
+            <h6>Earn rewards by pledging to Carter Hulsey</h6>
+            <a href="checkout.html" class="button button-green pledge-button">Pledge</a>
+          </div>
         </div>
-      </div>
     </section>
 
     <footer>
@@ -142,6 +233,7 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/dropit.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
     <script>
       $(document).foundation();

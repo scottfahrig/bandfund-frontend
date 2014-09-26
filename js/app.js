@@ -56,3 +56,7 @@ $("section#profile .actions a.button-lightgreen").mouseout(function() {
     $("span", this).fadeOut(250);
     $("img", this).delay(250).fadeIn(250);
 });
+
+$(document).ready(function() {
+    $('.menu').dropit();
+});

@@ -18,6 +18,16 @@ button:focus {
     outline: none;
 }
 
+input#photo-dropzone {
+    height: 228px;
+    width: 228px;
+    background-color: #efefef;
+    background: #efefef url("../img/icons/upload.svg") no-repeat center center;
+    background-size: 80px;
+    text-indent: -9999px;
+    color: transparent;
+}
+
 .container {
     width: 960px;
     margin: 0 auto;
@@ -960,7 +970,7 @@ section#login-fb .button img {
 
 .well {
     border: 1px solid #ddd;
-    padding: 30px 0;
+    padding: 30px 20px;
     border-radius: 5px;
 }
 
@@ -973,4 +983,10 @@ section#login-fb .button img {
     padding: 10px;
     font-size: 14px;
     font-weight: 300;
+}
+
+/* Profile Editor */
+
+section#profile-editor {
+    margin: 60px;
 }
